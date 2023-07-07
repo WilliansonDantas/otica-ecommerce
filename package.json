@@ -1,0 +1,15 @@
+{
+  "name": "otica-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:apps": "node apps.install.mjs",
+    "compose:down": "docker-compose down",
+    "compose:up": "docker-compose up -d",
+    "logs": "docker-compose logs -f"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
