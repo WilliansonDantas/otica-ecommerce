@@ -11,15 +11,15 @@ module.exports = {
         name: `Óculos ${index}`,
         price: Math.floor(Math.random() * 500) + 50,
         url_image: `https://picsum.photos/200/300?random=${index}`,
-        createdAt: new Date(),
-        updatedAt: new Date(),
+        // createdAt: new Date(),
+        // updatedAt: new Date(),
       });
     }
 
-    await queryInterface.bulkInsert("products", productsData, {});
+    return await queryInterface.bulkInsert("products", productsData, {});
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkDelete("products", null, {});
+    return await queryInterface.bulkDelete("products", null, {});
   },
 };
