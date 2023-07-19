@@ -4,7 +4,7 @@ services:
     container_name: "otica"
     image: "postgres:14.1-alpine"
     env_file:
-      - ./.env
+      - ./back-end/.env
     ports:
       - "54320:5432"
     volumes:
