@@ -1,5 +1,5 @@
-const User = require("../database/models");
+const User = require("../database/models/User");
 
-const usersService = async () => User.findAll();
+const usersService = async () => await User.findAll();
 
 module.exports = usersService;
