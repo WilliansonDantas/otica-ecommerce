@@ -1,6 +1,5 @@
 "use strict";
 
-/** @type {import('sequelize-cli').Migration} */
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     const productsData = [];
@@ -11,8 +10,6 @@ module.exports = {
         name: `Óculos ${index}`,
         price: Math.floor(Math.random() * 500) + 50,
         url_image: `https://picsum.photos/200/300?random=${index}`,
-        // createdAt: new Date(),
-        // updatedAt: new Date(),
       });
     }
 
